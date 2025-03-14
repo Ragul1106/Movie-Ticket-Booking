@@ -267,9 +267,7 @@ footer button{
     border-radius: 5px;
 }
 
-/* Default styles (for larger screens) */
 
-/* Media Query for tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
     #header {
         flex-direction: column;
@@ -301,7 +299,7 @@ footer button{
     }
 }
 
-/* Media Query for mobile screens (max-width: 768px) */
+
 @media (max-width: 768px) {
     h3 {
         font-size: 16px;
@@ -350,7 +348,7 @@ footer button{
     }
 }
 
-/* Media Query for very small screens (max-width: 480px) */
+
 @media (max-width: 480px) {
     #header {
         flex-direction: column;
