@@ -20,6 +20,10 @@ body {
     color: white;
 }
 
+.signin{
+    color: white;
+}
+
 li {
     list-style: none;
     display: flex;
@@ -53,11 +57,12 @@ h3{
 }
 
 .seat-timing {
-    margin: 20px;
+    margin: 20px 60px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     font-family: sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
 .seat-timing h2 {
@@ -80,26 +85,26 @@ h3{
 }
 
 .timing-buttons button {
-    padding: 12px 25px;
+    padding: 12px 45px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
     cursor: pointer;
     text-align: center;
-    white-space: nowrap; /* Prevent wrapping */
+    white-space: nowrap; 
 }
 
 .timing-buttons button.selected {
-    background-color: #007bff;
+    background-color: lightcoral;
     color: white;
-    border-color: #007bff;
 }
 
 .timing-buttons button span {
     display: block;
     margin-top: 5px;
     font-size: 12px;
+    font-weight: bold;
 }
 
 .booking-slot {
@@ -108,8 +113,10 @@ h3{
     gap: 15px;
     color: black;
     align-items: center;
-    justify-content: center; /* Center on smaller screens */
+    justify-content: center; 
     margin-top: 15px;
+    margin-right: 50px;
+    font-size: x-large;
 }
 
 .seat-box {
@@ -117,7 +124,6 @@ h3{
     width: 15px;
     height: 15px;
     border-radius: 3px;
-    margin-right: 5px;
 }
 
 .seat-box.available {
