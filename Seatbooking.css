@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: white;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #101734;
+    padding: 20px;
+    color: white;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.signup {
+    background-color: rgb(244, 202, 63);
+    color: black;
+}
+
+h3{
+    color: black;
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+.seat-timing {
+    background-color: white;
+    margin: 20px 70px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+}
+
+
+.seat-timing h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px; 
+}
+
+
+.timing-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+
+.timing-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+}
+
+.timing-buttons span{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.seat-timing button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px 40px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.seat-timing .selected {
+    background-color: lightcoral;
+    color: white;
+    border: none;
+}
+
+
+.booking-slot {
+    display: flex;
+    flex-direction: row;
+    font-size: xx-large;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.seat-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+
+.available {
+    background-color: white;
+}
+
+
+.booked {
+    background-color: grey;
+}
+
+
+.selected {
+    background-color: rgb(8, 111, 214);
+}
+
+.screen {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+
+.screen::before {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 15px;
+    background: black;
+    margin: 30px auto;
+    border-radius: 50% 50% 0 0;
+}
+
+
+.seat-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.classic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+.prime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    padding-bottom: 10px;
+}
+
+.left-seats,
+.right-seats {
+    display: flex;
+    gap: 10px;
+}
+
+.seat-container h3{
+    text-align: center;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.seat-gap {
+    margin-left: 100px; 
+}
+
+.row-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin: 0 15px;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.row-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin: 0 15px;
+}
+
+.available {
+    border: 2px solid #00BFFF;
+    color: #00BFFF;
+}
+.hidden{
+    visibility: hidden;
+}
+.booked {
+    background-color: grey;
+    border: 2px solid grey;
+    color: white;
+    cursor: not-allowed;
+}
+
+.booking-slot .selected{
+    background-color: rgb(8, 111, 214);
+    border: 2px solid rgb(8, 111, 214);
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: #f8f8f8; 
+    padding: 20px; 
+    text-align: center; 
+    border-top: 2px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+footer span{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+footer p{
+    font-size: 14px; 
+    color: #555;
+}
+footer button{
+    background: #ff6b6b; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 5px;
+}
+
+/* Default styles (for larger screens) */
+
+/* Media Query for tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    #header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    li {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .seat-container {
+        padding: 10px;
+    }
+
+    .seat-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .seat {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .seat-gap {
+        margin-left: 50px;
+    }
+}
+
+/* Media Query for mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    h3 {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .seat-timing {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .timing-buttons button {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .booking-slot {
+        flex-direction: column;
+        align-items: center;
+        font-size: large;
+        gap: 5px;
+    }
+
+    .seat {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .screen h3 {
+        font-size: 14px;
+    }
+
+    .seat-container h3 {
+        font-size: 14px;
+    }
+
+    .seat-gap {
+        margin-left: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+/* Media Query for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    #header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    li {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .seat {
+        width: 18px;
+        height: 18px;
+        font-size: 9px;
+    }
+
+    .timing-buttons button {
+        padding: 8px 15px;
+        font-size: 10px;
+    }
+
+    .seat-gap {
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Booking</title>
+    <link rel="stylesheet" href="Seatbooking.css">
+</head>
+<body>
+    <header id="header">
+        <p>Book My Show</p>
+        <li>
+          <a href="#">Home</a>
+          <a href="#">Movies</a>
+          <a href="#">Offers</a>
+          <a href="#">Contact Us</a>
+        </li>
+        <div>
+          <button class="signup">Sign Up</button>
+          <button class="signin">Sign In</button>
+        </div>
+    </header>
+
+    <main>
+        <h3>Pick a Seat</h3>
+        <section class="seat-timing">
+            <div>
+                <h2>VANANGAAN</h2>
+                <div class="timing-section">
+                    <!-- Left Side: Timing Buttons -->
+                    <div class="timing-buttons">
+                        <button class="selected">Today<br /><span>04:30 PM</span></button>
+                        <button>Today<br /><span>07:15 PM</span></button>
+                        <button>Today<br /><span>10:00 PM</span></button>
+                    </div>
+                    
+                    <!-- Right Side: Seat Status -->
+                    <div class="booking-slot">
+                        <span class="seat-box available"></span> Available
+                        <span class="seat-box booked"></span> Booked
+                        <span class="seat-box selected"></span> Selected
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="screen">
+            <h3>SCREEN</h3>
+            <!-- Classic Section -->
+            <div class="seat-container">
+                <h3>Classic: ₹59.94</h3>
+                <div class="seat-row classic">
+                    <span class="row-label">A</span> 
+                    <div class="left-seats">
+                        <span class="seat available">1</span>
+                        <span class="seat available">2</span>
+                        <span class="seat available">3</span>
+                        <span class="seat available">4</span>
+                        <span class="seat available">5</span>
+                        <span class="seat available">6</span>
+                    </div>
+                    <div class="seat-gap"></div>
+                    <div class="right-seats">
+                        <span class="seat available">7</span>
+                        <span class="seat available">8</span>
+                        <span class="seat available">9</span>
+                        <span class="seat available">10</span>
+                        <span class="seat available">11</span>
+                        <span class="seat available">12</span>
+                        <span class="seat available">13</span>
+                        <span class="seat available">14</span>
+                    </div>
+                    <span class="row-label">A</span> 
+                </div>
+            </div>
+
+            <!-- Prime Section -->
+            <div class="seat-container">
+                <h3>Prime: ₹195.54</h3>
+                <div class="seat-row prime">
+                    <span class="row-label">B</span> 
+                    <div class="left-seats">
+                        <span class="seat booked">1</span>
+                        <span class="seat booked">2</span>
+                        <span class="seat booked">3</span>
+                        <span class="seat booked">4</span>
+                        <span class="seat booked">5</span>
+                        <span class="seat booked">6</span>
+                    </div>
+                    <div class="seat-gap"></div>
+                    <div class="right-seats">
+                        <span class="seat available">7</span>
+                        <span class="seat available">8</span>
+                        <span class="seat available">9</span>
+                        <span class="seat booked">10</span>
+                        <span class="seat booked">11</span>
+                        <span class="seat booked">12</span>
+                        <span class="seat booked">13</span>
+                        <span class="seat booked">14</span>
+                    </div>
+                    <span class="row-label">B</span> 
+                </div>
+
+                <div class="seat-row prime">
+                    <span class="row-label">C</span> 
+                    <div class="left-seats">
+                        <span class="seat available">1</span>
+                        <span class="seat available">2</span>
+                        <span class="seat available">3</span>
+                        <span class="seat booked">4</span>
+                        <span class="seat available">5</span>
+                        <span class="seat available">6</span>
+                    </div>
+                    <div class="seat-gap"></div>
+                    <div class="right-seats">
+                        <span class="seat available">7</span>
+                        <span class="seat available">8</span>
+                        <span class="seat available">9</span>
+                        <span class="seat booked">10</span>
+                        <span class="seat booked">11</span>
+                        <span class="seat booked">12</span>
+                        <span class="seat booked">13</span>
+                        <span class="seat booked">14</span>
+                    </div>
+                    <span class="row-label">C</span> 
+                </div>
+
+                <div class="seat-row prime">
+                    <span class="row-label">D</span> 
+                    <div class="left-seats">
+                        <span class="seat available">1</span>
+                        <span class="seat available">2</span>
+                        <span class="seat available">3</span>
+                        <span class="seat available">4</span>
+                        <span class="seat available">5</span>
+                        <span class="seat hidden">6</span>
+                    </div>
+                    <div class="seat-gap"></div>
+                    <div class="right-seats">
+                        <span class="seat hidden">7</span>
+                        <span class="seat available">8</span>
+                        <span class="seat booked">9</span>
+                        <span class="seat available">10</span>
+                        <span class="seat available">11</span>
+                        <span class="seat booked">12</span>
+                        <span class="seat available">13</span>
+                        <span class="seat available">14</span>
+                    </div>
+                    <span class="row-label">D</span> 
+                </div>
+
+                <div class="seat-row prime">
+                    <span class="row-label">E</span> 
+                    <div class="left-seats">
+                        <span class="seat available">1</span>
+                        <span class="seat available">2</span>
+                        <span class="seat available">3</span>
+                        <span class="seat available">4</span>
+                        <span class="seat available">5</span>
+                        <span class="seat hidden">6</span>
+                    </div>
+                    <div class="seat-gap"></div>
+                    <div class="right-seats">
+                        <span class="seat hidden">7</span>
+                        <span class="seat available">8</span>
+                        <span class="seat booked">9</span>
+                        <span class="seat available">10</span>
+                        <span class="seat available">11</span>
+                        <span class="seat booked">12</span>
+                        <span class="seat available">13</span>
+                        <span class="seat available">14</span>
+                    </div>
+                    <span class="row-label">E</span> 
+                </div>
+
+                <div class="seat-row prime">
+                    <span class="row-label">F</span> 
+                    <div class="left-seats">
+                        <span class="seat available">1</span>
+                        <span class="seat available">2</span>
+                        <span class="seat booked">3</span>
+                        <span class="seat booked">4</span>
+                        <span class="seat booked">5</span>
+                        <span class="seat available">6</span>
+                    </div>
+                    <div class="seat-gap"></div>
+                    <div class="right-seats">
+                        <span class="seat booked">7</span>
+                        <span class="seat booked">8</span>
+                        <span class="seat booked">9</span>
+                        <span class="seat booked">10</span>
+                        <span class="seat booked">11</span>
+                        <span class="seat booked">12</span>
+                        <span class="seat booked">13</span>
+                        <span class="seat booked">14</span>
+                    </div>
+                    <span class="row-label">F</span> 
+                </div>
+
+                <div class="seat-row prime">
+                    <span class="row-label">G</span> 
+                    <div class="left-seats">
+                        <span class="seat booked">1</span>
+                        <span class="seat booked">2</span>
+                        <span class="seat booked">3</span>
+                        <span class="seat booked">4</span>
+                        <span class="seat booked">5</span>
+                        <span class="seat booked">6</span>
+                    </div>
+                    <div class="seat-gap"></div>
+                    <div class="right-seats">
+                        <span class="seat available">7</span>
+                        <span class="seat available">8</span>
+                        <span class="seat available">9</span>
+                        <span class="seat available">10</span>
+                        <span class="seat available">11</span>
+                        <span class="seat available">12</span>
+                        <span class="seat available">13</span>
+                        <span class="seat available">14</span>
+                    </div>
+                    <span class="row-label">G</span> 
+                </div>
+
+                <div class="seat-row prime">
+                    <span class="row-label">H</span> 
+                    <div class="left-seats">
+                        <span class="seat available">1</span>
+                        <span class="seat available">2</span>
+                        <span class="seat available">3</span>
+                        <span class="seat available">4</span>
+                        <span class="seat available">5</span>
+                        <span class="seat available">6</span>
+                    </div>
+                    <div class="seat-gap"></div>
+                    <div class="right-seats">
+                        <span class="seat available">7</span>
+                        <span class="seat booked">8</span>
+                        <span class="seat booked">9</span>
+                        <span class="seat booked">10</span>
+                        <span class="seat booked">11</span>
+                        <span class="seat available">12</span>
+                        <span class="seat available">13</span>
+                        <span class="seat available">14</span>
+                    </div>
+                    <span class="row-label">H</span> 
+                </div>
+
+                <div class="seat-row prime">
+                    <span class="row-label">I</span> 
+                    <div class="left-seats">
+                        <span class="seat available">1</span>
+                        <span class="seat available">2</span>
+                        <span class="seat booked">3</span>
+                        <span class="seat booked">4</span>
+                        <span class="seat available">5</span>
+                        <span class="seat available">6</span>
+                    </div>
+                    <div class="seat-gap"></div>
+                    <div class="right-seats">
+                        <span class="seat available">7</span>
+                        <span class="seat available">8</span>
+                        <span class="seat available">9</span>
+                        <span class="seat booked">10</span>
+                        <span class="seat booked">11</span>
+                        <span class="seat booked">12</span>
+                        <span class="seat available">13</span>
+                        <span class="seat available">14</span>
+                    </div>
+                    <span class="row-label">I</span> 
+                </div>
+
+                <div class="seat-row prime">
+                    <span class="row-label">J</span> 
+                    <div class="left-seats">
+                        <span class="seat booked">1</span>
+                        <span class="seat booked">2</span>
+                        <span class="seat available">3</span>
+                        <span class="seat available">4</span>
+                        <span class="seat available">5</span>
+                        <span class="seat available">6</span>
+                    </div>
+                    <div class="seat-gap"></div>
+                    <div class="right-seats">
+                        <span class="seat available">7</span>
+                        <span class="seat available">8</span>
+                        <span class="seat available">9</span>
+                        <span class="seat available">10</span>
+                        <span class="seat available">11</span>
+                        <span class="seat available">12</span>
+                        <span class="seat available">13</span>
+                        <span class="seat available">14</span>
+                    </div>
+                    <span class="row-label">J</span> 
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><span>Tickets</span> (Tax Included) <br><br> <span>4 × ₹195.54 = ₹796.16</span></p>
+        <button> Book Tickets</button>
+    </footer>
+    
+</body>
+</html>

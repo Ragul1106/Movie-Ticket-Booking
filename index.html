@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="movieTicketBooking.css" />
+    <title>Movie Ticket Booking</title>
+  </head>
+  <body>
+    <header id="header">
+      <p>Book My Show</p>
+      <li>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Offers</a>
+        <a href="#">Contact Us</a>
+      </li>
+      <div>
+        <button class="signup">Sign Up</button>
+        <button class="signin">Sign In</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="ticket">
+        <h2>Tickets</h2>
+      </div>
+      <section class="movie-details">
+        <img src="/images/vanangan.jpg" alt="Vanangaan Movie Poster" />
+        <div class="movie-info">
+          <h2>VANANGAAN</h2>
+          <p>U/A • 2h 03m • Friday, Jan 10, 2025 • Action, Drama • Tamil</p>
+          <p>
+            Wrongfully imprisoned, the protagonist fights to unmask the powerful
+            mastermind behind his unjust incarceration.
+          </p>
+          <div>
+            <button class="watch-trailer">🎬 Watch Trailer</button> 
+          </div>
+          <button class="booking">Booking</button>
+          <button class="reviews">Reviews</button>
+        </div>
+      </section>
+
+      <div class="container">
+        <section class="date-selection">
+          <div class="dates">
+            <div class="selectdate">
+              <h3>Select a date</h3>
+            </div>
+            <button class="selected">Monday<br /><span>Jan 21, 2025</span></button>
+            <button>Tuesday<br /><span>Jan 22, 2025</span></button>
+            <button>Wednesday<br /><span>Jan 23, 2025</span></button>
+            <button>Thursday<br /><span>Jan 24, 2025</span></button>
+            <button>Friday<br /><span>Jan 25, 2025</span></button>
+            <button>Saturday<br /><span>Jan 26, 2025</span></button>
+            <button>Sunday<br /><span>Jan 27, 2025</span></button>
+          </div>
+        </section>
+
+        <section class="filters">
+          <div class="filter-options">
+            <label for="language">Filters:</label>
+            <select id="language">
+              <option>Tamil</option>
+            </select>
+            <select>
+              <option>Formats</option>
+            </select>
+            <select>
+              <option>Price</option>
+            </select>
+            <select>
+              <option>Showtime</option>
+            </select>
+          </div>
+          <button class="reset">Reset</button>
+        </section>
+
+        <section class="theatres">
+          <div class="search-bar">
+            <input type="text" placeholder="Search Theatres" />
+          </div>
+          <hr />
+          <div class="theatre-list">
+            <div class="theatre">
+              <h4>INOX The Marina Mall, OMR, Chennai</h4>
+              <p>
+                PVR INOX Limited, 3rd Floor, The Marina Mall, Chennai - 603103,
+                Tamil Nadu
+              </p>
+              <div class="showtimes">
+                <a href="Seatbooking.html">
+                  <button>Today<br /><span>04:30 PM</span></button>
+                </a>                
+                <button>Today<br /><span>07:15 PM</span></button>
+                <button>Today<br /><span>10:00 PM</span></button>
+              </div>
+            </div>
+            <div class="theatre">
+              <h4>PVR Theyagaraja Thiruvanmiyur Chennai</h4>
+              <p>60, LB Rd, Ranganatha Puram, Chennai</p>
+            </div>
+            <div class="theatre">
+              <h4>PVR Sathyam Royapettah Chennai</h4>
+              <p>8, Thiru Vi Ka Rd, Royapettah, Chennai - 600014</p>
+            </div>
+            <div class="theatre">
+              <h4>PVR SKLS Galaxy Mall, Red Hills Chennai</h4>
+              <p>
+                PVR Limited, Survey No.93/IC/2B, GNT Road, Hills, Chennai - 600
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="download-app">
+          <h4>Download App</h4>
+          <p>From APP Store or Play Store</p>
+          <img src="/images/playstore.jpeg" alt="Google Play" /><br />
+          <img src="/images/appstore.png" alt="App Store" />
+        </div>
+        <div class="browse">
+          <h4>Browse</h4>
+          <p>Now Showing</p>
+          <p>Coming Soon</p>
+          <p>Theatres</p>
+        </div>
+        <div class="links">
+          <h4>Links</h4>
+          <p>Sign in</p>
+          <p>Sign Up</p>
+          <p>Help</p>
+          <p>About Us</p>
+        </div>
+        <div class="enquiry">
+          <h4>Enquiry</h4>
+          <p>Support Services <br />(24 x 7)</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
