@@ -35,7 +35,7 @@ button {
     background: transparent;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: black;
     padding: 10px 15px;
     margin: 0 5px;
     cursor: pointer;
@@ -53,92 +53,85 @@ h3{
 }
 
 .seat-timing {
-    background-color: white;
-    margin: 20px 70px;
+    margin: 20px;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 10px;
-    color: black;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: sans-serif;
 }
-
 
 .seat-timing h2 {
+    margin-bottom: 15px;
     text-align: center;
-    font-size: 20px;
-    margin-bottom: 30px; 
+    color: black;
 }
-
 
 .timing-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
     align-items: center;
 }
-
 
 .timing-buttons {
     display: flex;
-    flex-direction: row;
-    gap: 10px; 
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.timing-buttons span{
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.seat-timing button {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    text-align: center;
-    padding: 15px 40px;
-    cursor: pointer;
+.timing-buttons button {
+    padding: 12px 25px;
     font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap; /* Prevent wrapping */
 }
 
-.seat-timing .selected {
-    background-color: lightcoral;
+.timing-buttons button.selected {
+    background-color: #007bff;
     color: white;
-    border: none;
+    border-color: #007bff;
 }
 
+.timing-buttons button span {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+}
 
 .booking-slot {
     display: flex;
-    flex-direction: row;
-    font-size: xx-large;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 15px;
+    color: black;
     align-items: center;
+    justify-content: center; /* Center on smaller screens */
+    margin-top: 15px;
 }
-
 
 .seat-box {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 5px;
-    margin-right: 8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    margin-right: 5px;
 }
 
-
-.available {
+.seat-box.available {
     background-color: white;
 }
 
-
-.booked {
+.seat-box.booked {
     background-color: grey;
 }
 
-
-.selected {
-    background-color: rgb(8, 111, 214);
+.seat-box.selected {
+    background-color: rgb(19, 85, 177);
 }
+
 
 .screen {
     text-align: center;
@@ -319,8 +312,12 @@ footer button{
     .booking-slot {
         flex-direction: column;
         align-items: center;
-        font-size: large;
         gap: 5px;
+    }
+
+    .timing-section {
+        flex-direction: column;
+        align-items: center;
     }
 
     .seat {
@@ -346,9 +343,8 @@ footer button{
         text-align: center;
         padding: 15px;
     }
+
 }
-
-
 @media (max-width: 480px) {
     #header {
         flex-direction: column;
