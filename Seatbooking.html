@@ -10,7 +10,7 @@
     <header id="header">
         <p>Book My Show</p>
         <li>
-          <a href="#">Home</a>
+          <a href="index.html">Home</a>
           <a href="#">Movies</a>
           <a href="#">Offers</a>
           <a href="#">Contact Us</a>
@@ -297,9 +297,56 @@
     </main>
 
     <footer>
-        <p><span>Tickets</span> (Tax Included) <br><br> <span>4 × ₹195.54 = ₹796.16</span></p>
+        <!-- <p><span>Tickets</span> (Tax Included) <br><br> <span>4 × ₹195.54 = ₹796.16</span></p> -->
+        <div id="summary">
+            <p id="selected-count">Selected Seats: 0</p>
+            <p id="selected-seats">Seats: None</p>
+            <p id="total-price">Total Price: ₹0.00</p>
+        </div>
+        
         <button> Book Tickets</button>
     </footer>
-    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const seats = document.querySelectorAll(".seat");
+      
+          const selectedCountEl = document.getElementById("selected-count");
+          const selectedSeatsEl = document.getElementById("selected-seats");
+          const totalPriceEl = document.getElementById("total-price");
+      
+          function getSeatPrice(seat) {
+            const row = seat.closest(".seat-row");
+            return row && row.classList.contains("classic") ? 59.94 : 195.54;
+          }
+      
+          function updateSummary() {
+            const selectedSeats = document.querySelectorAll(".seat.selected");
+            let total = 0;
+            let seatNumbers = [];
+      
+            selectedSeats.forEach(seat => {
+              seatNumbers.push(seat.textContent.trim());
+              total += getSeatPrice(seat);
+            });
+      
+            selectedCountEl.textContent = `Selected Seats: ${seatNumbers.length}`;
+            selectedSeatsEl.textContent = `Seats: ${seatNumbers.length > 0 ? seatNumbers.join(", ") : "None"}`;
+            totalPriceEl.textContent = `Total Price: ₹${total.toFixed(2)}`;
+          }
+      
+          seats.forEach(seat => {
+            if (!seat.classList.contains("booked") && !seat.classList.contains("hidden")) {
+              seat.addEventListener("click", () => {
+                seat.classList.toggle("selected");
+                updateSummary();
+              });
+            }
+          });
+        });
+      </script>
+      
+      
+      
+      
 </body>
 </html>
